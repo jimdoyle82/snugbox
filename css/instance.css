@@ -1,0 +1,33 @@
+
+body {
+    background-color: orange;
+    padding: 20px;
+}
+
+
+.custom-container {
+    margin: 0 auto;
+	width: 300px;
+	position: relative;
+}
+
+.btnhit,
+.l-snugbox.custom {
+	padding: 15px 15px 15px;
+    margin: 0;
+}
+
+.l-snugbox.custom {
+	height: 256px;
+	background-color: #666666;
+}
+
+h2.custom {
+	margin: 0 0 5px 0;
+	font-family: arial, sans-serif;
+}
+
+.custom-container[data-id="sfdc"] .snugbox-img {
+	background-image: url( "../img/sfdc.jpg" );
+	background-position: right bottom;
+}

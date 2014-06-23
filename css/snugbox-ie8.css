@@ -1,0 +1,12 @@
+/* needed in separate css file for polyfill to stop affecting ie9 as well */
+
+.russiandoll-img {
+	/* ie8 polyfill. Use absolute path.	*/
+	-ms-behavior: url(/libs/backgroundsize.min.htc);
+}
+
+.no-background-size .russiandoll-img {
+	overflow: hidden;
+	position: relative;
+	z-index: 9;
+}
