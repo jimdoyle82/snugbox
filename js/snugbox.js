@@ -17,7 +17,7 @@
 
 		// workaround for button not being clickable because of polyfill
 		$(".snugbox-img").on("click", function(evt) {
-			$(evt.target).closest(".custom-container").trigger("click");
+			$(evt.target).closest(".container").trigger("click");
 		});
 	}
 
@@ -39,7 +39,7 @@
 	function resizeBgSizePolyfill() {
 		if( Modernizr.backgroundsize ) return;
 
-		$.each( $(".custom-container .background-size-polyfill"), function(i, el) {
+		$.each( $(".container .background-size-polyfill"), function(i, el) {
 
 			// set heights, so that IE8 can render the polyfill correctly
 			$(el).height( $(el).parent().height() );
