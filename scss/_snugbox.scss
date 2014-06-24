@@ -1,0 +1,43 @@
+
+
+.l-snugbox {
+	display: table;
+	width: 100%;
+}
+
+.l-snugbox-row {
+	display: table-row;
+}
+
+.l-snugbox-cell {
+	display: table-cell;
+	width: 100%;
+}
+
+.l-snugbox-heading {
+	height: 1%; /* this height will change with text height as it flows to next line */
+}
+
+.l-snugbox-img {
+	height: 99%; /* ie 8-10 need a height here, even though it changes based on content of top row */
+}
+
+.snugbox-img {
+	background-color: $bgcol; /* Use hex values to ensure ie8-9 compatibility. */
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;	
+}
+
+.btnhit {
+	cursor: pointer;
+	background-color: transparent;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 10;
+	display: block;
+	width: 100%;
+}

@@ -1,3 +1,5 @@
 Options -Indexes
-DirectoryIndex /bitbucket/jimdoyle82/snugbox/index.html
+DirectoryIndex /github/jimdoyle82/snugbox/index.html
+
+# you need this for the "background-size" polyfill
 AddType text/x-component .htc

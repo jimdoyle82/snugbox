@@ -1,65 +1,63 @@
-
 body {
-    background-color: orange;
-    padding: 20px;
+  background-color: orange;
+  padding: 20px;
 }
-
 
 /* START Custom Instance 1 */
 .custom-instance-1 {
-    margin: 0 auto;
-	width: 300px;
-	position: relative;
+  margin: 0 auto;
+  width: 300px;
+  position: relative;
 }
 
 .custom-instance-1 > .btnhit,
 .custom-instance-1 > .l-snugbox {
-	padding: 15px 15px 15px;
-    margin: 0;
+  padding: 15px 15px 15px;
+  margin: 0;
 }
 
 .custom-instance-1 > .l-snugbox {
-	height: 200px;
-	background-color: #666666;
+  height: 200px;
+  background-color: #666666;
 }
 
 .custom-instance-1 h2 {
-	margin: 0 0 5px 0;
-	font-family: arial, sans-serif;
+  margin: 0 0 5px 0;
+  font-family: arial, sans-serif;
 }
 
 .custom-instance-1 .snugbox-img {
-	background-image: url( "../img/sfdc.jpg" );
-	background-position: right bottom;
+  background-image: url("../img/sfdc.jpg");
+  background-position: right bottom;
 }
+
 /* END Custom Instance 1 */
-
-
 /* START Custom Instance 2 */
 .custom-instance-2 {
-    margin: 10px auto 0;
-	width: 500px;
-	position: relative;
+  margin: 10px auto 0;
+  width: 500px;
+  position: relative;
 }
 
 .custom-instance-2 > .btnhit,
 .custom-instance-2 > .l-snugbox {
-	padding: 15px 15px 15px;
-    margin: 0;
+  padding: 15px 15px 15px;
+  margin: 0;
 }
 
 .custom-instance-2 > .l-snugbox {
-	height: 300px;
-	background-color: #666666;
+  height: 300px;
+  background-color: #666666;
 }
 
 .custom-instance-2 h2 {
-	margin: 0 0 5px 0;
-	font-family: arial, sans-serif;
+  margin: 0 0 5px 0;
+  font-family: arial, sans-serif;
 }
 
 .custom-instance-2 .snugbox-img {
-	background-image: url( "../img/sfdc.jpg" );
-	background-position: right bottom;
+  background-image: url("../img/sfdc.jpg");
+  background-position: right bottom;
 }
+
 /* END Custom Instance 2 */

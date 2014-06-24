@@ -1,7 +1,7 @@
 {
    "name": "snugbox"
   ,"description": "A fixed height box that encapsulates a resizing image and text area."
-  ,"version": "0.1.1"
+  ,"version": "0.1.2"
   ,"author": {
      "name": "Jim Doyle"
     ,"email": "info@jimdoyle.com.au"
@@ -16,5 +16,6 @@
   ,"dependencies": {
      "grunt": "0.4.5"
      ,"grunt-devserver": "0.5.1"
+     ,"grunt-contrib-sass": "0.7.3"
   }
 }

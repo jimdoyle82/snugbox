@@ -12,11 +12,28 @@ module.exports = function (grunt) {
                 }
             }
         }
+
+        ,sass: {
+            dist: {
+                options: {
+                    style: "expanded"
+                }
+                ,files: [{
+                    expand: true
+                    ,cwd: "scss"
+                    ,src: ["*.scss"]
+                    ,dest: "./css"
+                    ,ext: ".css"
+                }]
+            }
+        }
     });
     
 
 
-    grunt.registerTask("default", ["devserver"]);
+    grunt.registerTask("default", ["sass"]);
+    grunt.registerTask("local", ["devserver"]);
 
     grunt.loadNpmTasks('grunt-devserver');
+    grunt.loadNpmTasks('grunt-contrib-sass');
 };

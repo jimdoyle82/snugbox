@@ -1,0 +1,16 @@
+/* needed in separate css file for polyfill to stop affecting ie9 as well */
+
+.snugbox-img {
+	/* ie8 polyfill. Use absolute path.	*/
+	-ms-behavior: url( $libpath + "backgroundsize.min.htc" );
+}
+
+.hideimg {
+	display: none;
+}
+
+.no-background-size .snugbox-img {
+	overflow: hidden;
+	position: relative;
+	z-index: 9;
+}
