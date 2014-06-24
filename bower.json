@@ -1,0 +1,9 @@
+{
+   "name": "snugbox"
+  ,"description": "A fixed height box that encapsulates a resizing image and text area."
+  ,"version": "0.1.0"
+  ,"ignore": [".gitignore", "bower.json", "package.json"]
+  ,"dependencies": {
+    "jquery": "1.11.0"
+  }
+}
