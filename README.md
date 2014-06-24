@@ -19,4 +19,4 @@ Run `grunt`  and then go to `localhost:8889/index.html` in a browser to run it.
 - The polyfill picks up ie9 as well, for some reason, even though IE9 is fine with "background-size:cover". So the IE8 specific css should be included with IE conditional comments.
 
 ## Live demo
-http://demos.jimdoyle.com.au/bitbucket/jimdoyle82/snugbox/
+http://demos.jimdoyle.com.au/github/jimdoyle82/snugbox/

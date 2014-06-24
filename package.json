@@ -1,14 +1,14 @@
 {
    "name": "snugbox"
   ,"description": "A fixed height box that encapsulates a resizing image and text area."
-  ,"version": "0.1.0"
+  ,"version": "0.1.1"
   ,"author": {
      "name": "Jim Doyle"
     ,"email": "info@jimdoyle.com.au"
   }
   ,"repository": {
      "type": "git"
-    ,"wiki": "https://bitbucket.org/jimdoyle82/snugbox/wiki/Home"
+    ,"wiki": "https://github.com/jimdoyle82/snugbox"
   }
   ,"engines": {
     "node": "0.10.28"
