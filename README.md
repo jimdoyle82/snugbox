@@ -4,8 +4,8 @@
 Using CSS, creates a fixed height box that encapsulates an image and text area and resizes the image area automatically, based on the remaining space after text has been placed. Includes a polyfill for "background-size" in IE8 and some JS workarounds to make it work with scalable heights on the image container. JS is only used for IE8 support.
 
 ## Gruntfile
-The grunt setup is just to run a local server. The IE8 .htc polyfill won't work without a server. <br>
-Run `grunt`  and then go to `localhost:8889/instance.html` in a browser to run it.
+The grunt setup is just to run a local server. The IE8 .htc polyfill won't work without a server.
+Run `grunt`  and then go to `localhost:8889/index.html` in a browser to run it.
 
 ## Dependencies
 - If you're running the local sever, you need NodeJS and GruntJS installed, then do `npm install` to fetch the NPM dependencies.
