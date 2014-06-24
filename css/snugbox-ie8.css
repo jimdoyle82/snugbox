@@ -5,6 +5,10 @@
 	-ms-behavior: url(/libs/backgroundsize.min.htc);
 }
 
+.hideimg {
+	display: none;
+}
+
 .no-background-size .snugbox-img {
 	overflow: hidden;
 	position: relative;

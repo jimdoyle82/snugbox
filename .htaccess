@@ -1,1 +1,3 @@
+Options -Indexes
+DirectoryIndex /bitbucket/jimdoyle82/snugbox/index.html
 AddType text/x-component .htc

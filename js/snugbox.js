@@ -26,9 +26,15 @@
 		if( Modernizr.backgroundsize ) return;
 
 		$("html").addClass('no-background-size');
+		$(".snugbox-img").addClass('hideimg');
 
 		// Until doc ready fired ".background-size-polyfill" doesn't exist
-		$(document).ready( resizeBgSizePolyfill );
+		ticker( 10, 500, function() {
+			return ($(".container .background-size-polyfill").length === 0);
+		}, function() {
+			$(".snugbox-img").removeClass('hideimg');
+			resizeBgSizePolyfill();
+		});
 	}
 
 
@@ -47,6 +53,32 @@
 			// triggers event handlers in polyfill on bg update
 			$(el).parent().css("background-position","center center");
 		});
+	}
+
+	function ticker( countMax, tickDur, ignoreWhileTrueCheck, callback ) {
+		var count = 0
+			,tick = tickDur
+			,intv = setInterval( function() {
+
+				// console.log( "tick", count, ignoreWhileTrueCheck() );
+
+				// attept only up to the max amount, then abort
+				if( count >= countMax ) {
+					// kill the ticker
+					clearInterval( intv );
+					return;
+				}
+
+				count++;
+
+				// do nothing until polyfill has kicked in
+				if( ignoreWhileTrueCheck() ) return;				
+
+				// kill the ticker
+				clearInterval( intv );
+
+				callback();
+			}, tick);
 	}
 
 })(jQuery, Modernizr);
