@@ -12,21 +12,23 @@
 
 			evt.preventDefault();
 		});
+
+		if( Modernizr.backgroundsize ) return;
+
+		// workaround for button not being clickable because of polyfill
+		$(".snugbox-img").on("click", function(evt) {
+			$(evt.target).closest(".custom-container").trigger("click");
+		});
 	}
 
 
 	function addClassesForBackgroundSize() {
-		if( !Modernizr.backgroundsize ) {
-			$("html").addClass('no-background-size');
+		if( Modernizr.backgroundsize ) return;
 
-			// workaround for button not being clickable because of polyfill
-			$(".snugbox-img").on("click", function(evt) {
-				$(evt.target).closest(".custom-container").trigger("click");
-			});
-			
-			// Until doc ready fired ".background-size-polyfill" doesn't exist
-			$(document).ready( resizeBgSizePolyfill );
-		}
+		$("html").addClass('no-background-size');
+
+		// Until doc ready fired ".background-size-polyfill" doesn't exist
+		$(document).ready( resizeBgSizePolyfill );
 	}
 
 
